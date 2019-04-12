@@ -12,7 +12,6 @@ public class LoginController {
 
         model.addAttribute("saludo", "Hola mundo!");
         return "login";
-
     }
 
 }

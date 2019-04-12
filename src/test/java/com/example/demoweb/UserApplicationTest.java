@@ -26,7 +26,7 @@ public class UserApplicationTest {
         UserApplication u = new UserApplication();
         u.setName("jamb");
         u.setPassword(encoder.encode("123"));
-
+//        u.setPassword("123");
         UserApplication retorno = repo.save(u);
 
         assertTrue(retorno.getPassword().equalsIgnoreCase(u.getPassword()));
